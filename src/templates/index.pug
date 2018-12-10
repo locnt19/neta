@@ -1,12 +1,33 @@
 extends _layout/layout
 
-//- Các giá trị mặc định cho trang web
 block variables
 	- var title = 'Home'
 	- var description = 'Description for home page'
 	- var bodyclass = 'home'
 
-//- Phần khai báo body
 block body
-	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
-	
+	section.container-fluid.p-0
+		#logo
+			a(href="#")
+				img(src="img/logo.png", alt="")
+		.row
+			#box
+				#nav
+					h2 neta vietnam
+					i#underline
+					ul
+						li
+							a(href="#") sứ mệnh feder
+						li
+							a(href="#") bọ rùa stacker
+						li
+							a(href="#") dũng sĩ coder
+						li
+							a(href="#") ngôi trường neta
+				#social
+					a(href="https://www.facebook.com/netavietnam").social-box
+						i.fa.fa-facebook
+					a(href="https://github.com/netavietnam").social-box
+						i.fa.fa-github
+					a(href="#").social-box
+						i.fa.fa-google
